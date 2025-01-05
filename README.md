@@ -1,3 +1,4 @@
-# rust-pangenome-browser
- - rust web implementation for metagenome and pangenome browser.
- - uses rocket framework 
+# rust-ancestral-state
+ - rust ancestral state estimation from genome arthemtic intervals.
+
+Gaurav Sablok
