@@ -1,2 +1,3 @@
 # rust-pangenome-browser
-rust actix frame implement for metagenome and pangenome browser
+ - rust web implementation for metagenome and pangenome browser.
+ - uses rocket framework 
