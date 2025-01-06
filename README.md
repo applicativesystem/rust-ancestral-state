@@ -4,6 +4,7 @@
  - searches for the longest alignment match according to the specified length filter.
  - infers the ancestrals states using the prank. 
  - writes the ancestral states in a separate fasta file. 
+ - general note: Incase of Golang and RUST, please see the last commit message and if it says compiled binary then it is completed or else still in development version.
 
   ```
   cargo build
@@ -31,5 +32,9 @@
 ./sample-file/sample.bed
 ./sample-file/sample.fasta 7 ./prank
 
- ```
+-rw-r--r--. 1 gauravsablok gauravsablok  72 Jan  6 22:10 ancestral-aligned.fasta.best.anc.dnd 
+-rw-r--r--. 1 gauravsablok gauravsablok 104 Jan  6 22:10 ancestral-aligned.fasta.best.anc.fas
+-rw-r--r--. 1 gauravsablok gauravsablok  66 Jan  6 22:10 ancestral-aligned.fasta.best.fas
+ 
+```
  Gaurav Sablok

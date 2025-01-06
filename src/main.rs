@@ -14,10 +14,11 @@ use std::process::Command;
 *Author Gaurav Sablok
 *Universitat Potsdam
 *Date 2024-1-6
-bedtools arthimetic for the pangenome. rust ancestral state construction
-using the bed tools alignments.given a bed alignment and the corresponding
-fasta file will extract and filter the pangenome alignment above that threshold.
-You can map using any aligner and convert to the bed format for the same.
+
+ bedtools arthimetic for the pangenome. rust ancestral state construction
+ using the bed tools alignments.given a bed alignment and the corresponding
+ fasta file will extract and filter the pangenome alignment above that threshold.
+ You can map using any aligner and convert to the bed format for the same.
 
 */
 
@@ -61,6 +62,7 @@ fn pangenome_longest_alignment(
         bedtoolsstart.push(linevec[1].parse::<usize>().unwrap());
         bedtoolsend.push(linevec[2].parse::<usize>().unwrap());
     }
+    // calling the longest alignment function here.
     let estimate = estimate_longest_alignment(bedtoolsstart, bedtoolsend).unwrap();
     let mut writeestimate = File::create("alignment_length.txt").expect("file not found");
     writeln!(
@@ -90,12 +92,12 @@ fn pangenome_longest_alignment(
         }
     }
 
-    let _align = Command::new(pathprank)
-        .arg("-d=")
-        .arg("./ancestral.fasta")
+    let _aligned = Command::new(pathprank)
+        .arg("-d=ancestral.fasta")
+        .arg("-o=ancestral-aligned.fasta")
         .arg("-showanc")
         .output()
-        .expect("command to fail");
+        .expect("failed to execute");
 
     Ok("Results file has been written".to_string())
 }
