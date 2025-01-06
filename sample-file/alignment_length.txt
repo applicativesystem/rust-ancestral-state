@@ -1,0 +1,10 @@
+The length estimates prior to the filtering along with the differences are given below
+start	end	difference	
+5	10	5
+
+2	11	9
+
+3	10	7
+
+10	22	12
+
