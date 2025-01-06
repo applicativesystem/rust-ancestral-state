@@ -1,5 +1,6 @@
-# rust-ancestral-state
- - rust ancestral state estimation from genome arthemtic intervals.
+# rust-bedtools-pangenome
+ - rust-bedtools but from the pangenome point of view. 
+ - rust ancestral state estimation from genome arthemtic intervals from bed alignment. 
  - searches for the longest alignment match according to the specified length filter.
  - infers the ancestrals states using the prank. 
  - writes the ancestral states in a separate fasta file. 
@@ -11,7 +12,8 @@
  - to run the binary 
  
  ```
- ➜ gauravsablok  rust-ancestral-state git:(main) ✗ ./target/debug/rust-pangenome-ancestral-state -h
+ ➜ gauravsablok  rust-ancestral-state git:(main) ✗
+  ./target/debug/rust-pangenome-ancestral-state -h
  Usage: rust-pangenome-ancestral-state <ALIGNMENT> <THRESHOLD> <FASTAFILE>
 
   Arguments:
@@ -25,7 +27,9 @@
  ```
  
  ```
-  ./target/debug/rust-pangenome-ancestral-state ./sample-file/sample.bed ./sample-file/sample.fasta 7 ./prank
+ ./target/debug/rust-pangenome-ancestral-state
+./sample-file/sample.bed
+./sample-file/sample.fasta 7 ./prank
 
  ```
  Gaurav Sablok
