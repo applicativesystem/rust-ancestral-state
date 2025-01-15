@@ -4,7 +4,7 @@
  - searches for the longest alignment match according to the specified length filter.
  - infers the ancestrals states using the prank. 
  - writes the ancestral states in a separate fasta file. 
- - general note: Incase of Golang and RUST, please see the last commit message and if it says compiled binary then it is completed or else still in development version.
+ - please see the last commit message and if it says compiled binary then it is completed or else still in development version.
 
   ```
   cargo build
